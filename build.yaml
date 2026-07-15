@@ -1,22 +1,19 @@
 include:
   # 1. The USB Dongle (Central Hub)
-  # Uses the left shield's map, but forces it to act as the central receiver
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: temper_left
     cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
 
   # 2. Left Keyboard Half (Peripheral)
-  # Uses the screens and is forced to act as a wireless peripheral
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: temper_left nice_view_adapter nice_view_gem
     cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 
   # 3. Right Keyboard Half (Peripheral)
-  # Uses the screens and is forced to act as a wireless peripheral
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: temper_right nice_view_adapter nice_view_gem
     cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 
-  # 4. Settings Reset File (To clear flash memory if needed)
-  - board: nice_nano_v2
+  # 4. Settings Reset File 
+  - board: nice_nano//zmk
     shield: settings_reset
