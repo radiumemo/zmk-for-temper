@@ -1,16 +1,16 @@
 include:
   # 1. The USB Dongle (Acts as the Central Receiver)
-  - board: nice_nano
+  - board: nice_nano//zmk
     shield: temper_dongle
 
   # 2. Left Keyboard Half (Peripheral)
-  - board: nice_nano
+  - board: nice_nano//zmk
     shield: temper_left
 
   # 3. Right Keyboard Half (Peripheral)
-  - board: nice_nano
+  - board: nice_nano//zmk
     shield: temper_right
 
   # 4. Settings Reset File (Just in case you need to clear flash memory)
-  - board: nice_nano
+  - board: nice_nano//zmk
     shield: settings_reset
