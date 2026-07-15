@@ -2,7 +2,7 @@ include:
   # 1. The USB Dongle (Central Hub)
   - board: nice_nano//zmk
     shield: temper_left
-    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=2
 
   # 2. Left Keyboard Half (Peripheral)
   - board: nice_nano//zmk
