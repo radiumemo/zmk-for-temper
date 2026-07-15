@@ -1,7 +1,7 @@
 include:
   # 1. The USB Dongle (Central Hub) - Now correctly formatted with BOTH flags
   - board: nice_nano//zmk
-    shield: temper_dongle
+    shield: temper_left
     cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y -DCONFIG_ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS=2
 
   # 2. Left Keyboard Half (Peripheral)
